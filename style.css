@@ -1,0 +1,120 @@
+@font-face
+{
+    font-family : "Neon";
+    src : url("NEON.ttf");
+    
+}
+
+@font-face
+{
+    font-family : "NeonGlow";
+    src : url("NeonGlow.ttf");
+}
+
+#PreTitre
+{
+    font-family: "Neon";
+    font-size: 68px;
+    text-align: center;
+    color: RGB(255, 255, 5);
+    text-shadow: 0 0 8px #FF0000, 0 0 8px #0000FF;
+}
+
+#Titre
+{
+    font-family: "Neon";
+    font-size: 95px;
+    text-align: center;
+    color: RGB(255, 255, 5);
+    text-shadow: 0 0 8px #FF0000, 0 0 8px #0000FF;
+    animation: Test 1s infinite;
+    -moz-transform: rotate(3deg);  
+    -webkit-transform: rotate(3deg); 
+}
+@keyframes Test{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+ul
+{
+    text-align: center;
+    
+}
+
+a:link
+{
+    font-family: "NeonGlow";
+    font-size: 55px;
+    text-decoration: none;
+}
+
+a:hover
+{
+  -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon 1.5s ease-in-out infinite alternate;
+  animation: neon 1.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+  }
+}
+
+/*compatabilité*/
+
+@-moz-keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+  }
+}
+
+li
+{
+    display: inline;
+    background-color: RGB(48, 48, 48);
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    font-size: 55px;
+ 
+}
+
+body
+{
+    background-image: url(fond.jpg);
+}
+
+footer
+{
+    margin-top: 500px;
+    background-image: url(fondFooter.jpg);
+    position: absolute;
+    background-position: center;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 22px;
+    font-family :cursive;
+    color: white;
+    text-shadow: 0 0 10px RGB(235, 0, 0);
+}
+
+h2
+{
+    text-align: center;
+    color: RGB(255, 255, 5);
+    font-family: "Neon";
+    font-size: 55px;
+    text-shadow: 0 0 8px #FF0000, 0 0 8px #0000FF;
+}
+
+#info
+{
+
+}

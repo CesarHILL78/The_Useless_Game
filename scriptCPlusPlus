@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
+
+
+using namespace std;
+
+int main()
+{
+    int nba,nb,i(1);
+    srand (time(NULL));
+    nba = rand()%(99) + 1;
+    cout << "Proposez un nombre" << endl;
+    cin>> nb;
+    while (nb!=nba&& i<10){
+        if (nb<nba) cout<<"plus grand"<<endl;
+        else cout<<"plus petit"<<endl;
+        cout << "Proposez un nombre" << endl;
+        cin>> nb;
+        i++;
+    }
+    if (i==10) cout << "C'est la loose"<< endl;
+    else cout << "Bravo vous avez trouve le nombre:"  <<nba<<"en"<<i<<"coups(s)"<< endl;
+    return 0;
+}
